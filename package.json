@@ -11,7 +11,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build; tsc",
-    "start": "vite start",
+    "build:demo": "vite build --config vite.config.demo.ts",
+    "start": "vite start --config vite.config.demo.ts",
     "prettier": "prettier -w src/**/*"
   },
   "type": "module",
