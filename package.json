@@ -1,5 +1,6 @@
 {
   "name": "solid-playground-editor-cm",
+  "version": "0.1.0",
   "description": "codemirror6-based editor with typescript support for the solid.js playground",
   "repository": {
     "type": "git",
