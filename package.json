@@ -1,6 +1,6 @@
 {
   "name": "solid-playground-editor-cm",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "codemirror6-based editor with typescript support for the solid.js playground",
   "repository": {
     "type": "git",
@@ -18,14 +18,16 @@
   "files": ["dist"],
   "main": "dist/editor.cjs",
   "module": "dist/editor.js",
+  "solid": "./dist/editor.jsx",
   "types": "dist/editor.d.ts",
   "styles": "dist/editor.css",
   "exports": {
-    ".": {
-      "import": "./dist/editor.js",
-      "require": "./dist/editor.cjs",
-      "solid": "./dist/editor.jsx"
-    }
+    "solid": "./dist/editor.jsx",
+    "import": {
+      "default": "./dist/editor.js",
+      "types": "./dist/editor.d.ts"
+    },
+    "require": "./dist/editor.cjs"
   },
   "sideEffects": false,
   "dependencies": {
